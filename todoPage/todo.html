@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo List</title>
+    <link rel="stylesheet" href="../Css/todo.css" />
+  </head>
+  <body>
+    <main>
+      <div class="form">
+        <h1>Welcome <span id="UserNameTodo">sir</span> to todo-app...</h1>
+        <button onclick="Logout();" class="LogoutBtn">Logout</button>
+        <form class="formy">
+          <span
+            ><span>Item-no :</span>
+            <input type="number" placeholder="00" class="roll"
+          /></span>
+          <span
+            ><span>Name of Item :</span>
+            <input type="text" placeholder="Item Name" class="name"
+          /></span>
+          <span
+            >
+          <select class="form-select">
+            <option selected value="">Storage</option>
+            <option value="localStorage">local Storage</option>
+            <option value="sessionStorage">Session Storage</option>
+            <option value="Cookies">Cookies</option>
+          </select>
+        </form>
+        <button class="but">Submit</button>
+      </div>
+      <div class="info">
+        <h1>Your items Information...</h1>
+        <div class="datas"></div>
+      </div>
+    </main>
+    <script src="../js/todo.js"></script>
+  </body>
+</html>

@@ -270,6 +270,7 @@ document.querySelectorAll(".editor").forEach((i) => {
 
 
 // let UserNameTodo = ;
+// logout function
 
 let local = localStorage.getItem("name");
 document.getElementById("UserNameTodo").innerHTML = local;
@@ -285,3 +286,27 @@ function Logout(){
   localStorage.removeItem("email");
   window.location.href = "/index.html"
 }
+
+
+// timer function
+
+const startingMinutes = 1;
+let time = startingMinutes * 60;
+
+const countdownEl = document.getElementById("timeLogout");
+
+
+function updateCountDown() {
+  const minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+  seconds = seconds < 10 ? "0" + seconds : seconds;
+  if(seconds === 0){
+    Logout()
+  }
+  countdownEl.innerHTML = `${minutes}:${seconds}`;
+  if(time === 0){
+    Logout();
+  }
+  time--;
+}
+setInterval(updateCountDown, 1000);

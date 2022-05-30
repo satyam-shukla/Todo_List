@@ -32,6 +32,10 @@ input{
     border: 1px solid #edb2a9 !important;
 }
 
+.lBtn{
+    display: flex;align-items: center;justify-content: center;
+}
+
 .but{
     font-size: 17px;
     border-radius: 500px;

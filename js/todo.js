@@ -309,4 +309,4 @@ function updateCountDown() {
   }
   time--;
 }
-setInterval(updateCountDown, 1000);
+// setInterval(updateCountDown, 1000);
